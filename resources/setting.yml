@@ -1,0 +1,6 @@
+# 공지가 표시되는 주기를 설정합니다.
+# 단위는 초 입니다.
+announce-interval: 10
+
+# 공지의 접두사를 설정합니다.
+announce-prefix: "§b[공지]"

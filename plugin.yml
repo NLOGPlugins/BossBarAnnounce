@@ -1,0 +1,23 @@
+name: BossBarAnnounce
+author: [solo, nlog]
+version: 0.0.1
+main: solo\bossbarannounce\BossBarAnnounce
+api:
+- 3.0.0-ALPHA7
+permissions:
+  bossbarannounce:
+    default: op
+    children:
+      bossbarannounce.command:
+        default: op
+        children:
+          bossbarannounce.command.add:
+            default: op
+          bossbarannounce.command.list:
+            default: true
+          bossbarannounce.command.remove:
+            default: op
+          bossbarannounce.command.setinterval:
+            default: op
+          bossbarannounce.command.setprefix:
+            default: op
