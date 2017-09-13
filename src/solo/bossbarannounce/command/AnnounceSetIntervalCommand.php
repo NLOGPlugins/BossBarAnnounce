@@ -13,7 +13,7 @@ class AnnounceSetIntervalCommand extends BossBarAnnounceCommand{
 
   public function __construct(BossBarAnnounce $owner){
     parent::__construct("공지주기", "공지가 표시되는 주기를 설정합니다.", "/공지주기 <주기(단위:초)>");
-    $this->setPermission("sannounce.command.setinterval");
+    $this->setPermission("bossbarannounce.command.setinterval");
 
     $this->owner = $owner;
   }

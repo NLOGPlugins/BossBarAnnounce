@@ -13,7 +13,7 @@ class AnnounceRemoveCommand extends BossBarAnnounceCommand{
 
   public function __construct(BossBarAnnounce $owner){
     parent::__construct("공지삭제", "해당 인덱스의 공지를 삭제합니다.", "/공지삭제 <인덱스>");
-    $this->setPermission("sannounce.command.remove");
+    $this->setPermission("bossbarannounce.command.remove");
 
     $this->owner = $owner;
   }

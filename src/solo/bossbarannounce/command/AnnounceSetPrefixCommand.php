@@ -13,7 +13,7 @@ class AnnounceSetPrefixCommand extends BossBarAnnounceCommand{
 
   public function __construct(BossBarAnnounce $owner){
     parent::__construct("공지접두사", "공지의 접두사를 설정합니다.", "/공지접두사 <접두사...>");
-    $this->setPermission("sannounce.command.setprefix");
+    $this->setPermission("bossbarannounce.command.setprefix");
 
     $this->owner = $owner;
   }

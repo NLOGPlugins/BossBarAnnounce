@@ -13,7 +13,7 @@ class AnnounceListCommand extends BossBarAnnounceCommand{
 
   public function __construct(BossBarAnnounce $owner){
     parent::__construct("공지목록", "공지 목록을 확인합니다.", "/공지목록 [페이지]");
-    $this->setPermission("sannounce.command.list");
+    $this->setPermission("bossbarannounce.command.list");
 
     $this->owner = $owner;
   }
