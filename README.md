@@ -1,8 +1,8 @@
 # BossBarAnnounce
-Plugin base by @solo5star . BossBarAPI by @thebigsmilexd
+Plugin base by _@solo5star_ . BossBarAPI by _@thebigsmilexd_
 
-#### Plugin Base
+### Plugin Base
 <a href="https://github.com/SOLOPlugins-PocketMine/SAnnounce">SAnnounce</a>
 
-#### BossBarAPI
+### BossBarAPI
 <a href="https://github.com/thebigsmileXD/BossBarAPI">BossBarAPI</a>
