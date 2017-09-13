@@ -1,5 +1,5 @@
 name: BossBarAnnounce
-author: [solo, nlog]
+author: [nlog, solo]
 version: 0.0.1
 main: solo\bossbarannounce\BossBarAnnounce
 api:
