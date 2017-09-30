@@ -6,7 +6,6 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 
 use solo\bossbarannounce\task\AnnounceTask;
-use xenialdan\BossBarAPI\API;
 use spoondetector\SpoonDetector;
 use pocketmine\Server;
 use pocketmine\network\mcpe\protocol\ProtocolInfo;
@@ -41,29 +40,11 @@ class BossBarAnnounce extends PluginBase{
 
   public function onEnable(){
   	
-  	/*
-  	if (!class_exists("spoondetector\\SpoonDetector")) {
-  		$this->getLogger()->critical("SpoonDetector(DEVirion 기반) 를 넣어주세요.");
-  		$this->getPluginLoader()->disablePlugin($this);
-  		return;
-  	}
-  	if (SpoonDetector::isThisSpoon()) {
-  		$this->getLogger()->critical("해당 플러그인은 PocketMine에서 작동합니다. 플러그인을 비활성화합니다.");
-  		$this->getPluginLoader()->disablePlugin($this);
-  		return;
-  	}*/
-  	
   	if (Server::getInstance()->getName() !== "PocketMine-MP" || ProtocolInfo::CURRENT_PROTOCOL < Utils::getURL("https://raw.githubusercontent.com/NLOGPlugins/BossBarAnnounce/master/protocol")) {
   		$this->getLogger()->critical("최신 버전의 PocketMine-MP 를 사용해주세요.");
   		$this->getPluginLoader()->disablePlugin($this);
   		return;
   	}
-  	
-	if (!class_exists("\\xenialdan\\BossBarAPI\\API")) {
-  		$this->getLogger()->critical("BossBarAPI 플러그인 (DEVirion 기반)을 넣어주세요. 플러그인을 비활성화합니다.");
-  		$this->getPluginLoader()->disablePlugin($this);
-		return;
-	}
   	
     @mkdir($this->getDataFolder());
     $this->saveResource("setting.yml");

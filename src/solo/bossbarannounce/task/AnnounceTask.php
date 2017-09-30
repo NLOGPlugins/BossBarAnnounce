@@ -3,7 +3,7 @@
 namespace solo\bossbarannounce\task;
 
 use solo\bossbarannounce\BossBarAnnounceTask;
-use xenialdan\BossBarAPI\API;
+use solo\bossbarannounce\API;
 use pocketmine\Server;
 
 class AnnounceTask extends BossBarAnnounceTask{

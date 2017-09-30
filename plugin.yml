@@ -1,9 +1,10 @@
 name: BossBarAnnounce
-author: [nlog, solo]
+author:
+- nlog
+- solo
 version: 0.0.1
 main: solo\bossbarannounce\BossBarAnnounce
-api:
-- 3.0.0-ALPHA8
+api: 3.0.0-ALPHA9
 permissions:
   bossbarannounce:
     default: op
